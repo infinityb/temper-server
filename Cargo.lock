@@ -1,0 +1,41 @@
+[root]
+name = "temper-server"
+version = "0.1.0"
+dependencies = [
+ "dbus 0.0.8 (git+https://github.com/diwic/dbus-rs)",
+ "temper 0.1.0 (git+https://github.com/infinityb/temper)",
+ "usb 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "byteorder"
+version = "0.3.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "dbus"
+version = "0.0.8"
+source = "git+https://github.com/diwic/dbus-rs#c4c9d51a818ae4c3e9b1033c450cd67a3098b3e6"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "temper"
+version = "0.1.0"
+source = "git+https://github.com/infinityb/temper#32e8eb4c832f590f8ef970c6aeeb144600eb53d0"
+dependencies = [
+ "byteorder 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "usb 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "usb"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

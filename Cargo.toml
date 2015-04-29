@@ -1,0 +1,13 @@
+[package]
+name = "temper-server"
+version = "0.1.0"
+authors = ["Stacey Ell <stacey.ell@gmail.com>"]
+
+[dependencies.temper]
+git = "https://github.com/infinityb/temper"
+
+[dependencies.dbus]
+git = "https://github.com/diwic/dbus-rs"
+
+[dependencies]
+usb = "0.2.1"
